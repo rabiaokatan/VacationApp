@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vacation_app/models/option.dart';
 import 'package:flutter_vacation_app/models/question.dart';
-import 'package:flutter_vacation_app/utils.dart';
 
 class OptionsWidget extends StatelessWidget {
   final Question question;
@@ -16,12 +15,9 @@ class OptionsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) => ListView(
         physics: BouncingScrollPhysics(),
-        children: Utils.heightBetween(
-          question.options
+        children: question.options
               .map((option) => buildOption(context, option))
               .toList(),
-          height: 8,
-        ),
       );
 
   Widget buildOption(BuildContext context, Option option) {
@@ -29,16 +25,19 @@ class OptionsWidget extends StatelessWidget {
 
     return GestureDetector(
       onTap: () => onClickedOption(option),
-      child: Container(
-        padding: EdgeInsets.all(12),
-        decoration: BoxDecoration(
-          color: color,
-          borderRadius: BorderRadius.circular(16),
-        ),
-        child: Column(
-          children: [
-            buildAnswer(option),
-          ],
+      child: Padding(
+        padding: const EdgeInsets.only(bottom: 8.0),
+        child: Container(
+          padding: EdgeInsets.all(12),
+          decoration: BoxDecoration(
+            color: color,
+            borderRadius: BorderRadius.circular(16),
+          ),
+          child: Column(
+            children: [
+              buildAnswer(option),
+            ],
+          ),
         ),
       ),
     );

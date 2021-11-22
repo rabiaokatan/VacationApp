@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_vacation_app/models/option.dart';
 import 'package:flutter_vacation_app/models/question.dart';
 import 'package:flutter_animation_progress_bar/flutter_animation_progress_bar.dart';
+import 'package:flutter_vacation_app/screens/welcome_screen.dart';
 import 'package:flutter_vacation_app/widgets/options_widget.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class QuestionsWidget extends StatelessWidget {
   final PageController controller;
   final ValueChanged<int> onChangedPage;
   final ValueChanged<Option> onClickedOption;
 
- QuestionsWidget({
+  QuestionsWidget({
     Key? key,
     required this.controller,
     required this.onChangedPage,
@@ -18,18 +20,33 @@ class QuestionsWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PageView.builder(
-      onPageChanged: onChangedPage,
-      controller: controller,
-      itemCount: questions.length,
-      itemBuilder: (context, index) {
-        final question = questions[index];
-        return buildQuestion(question: question);
+
+    Future<void> sharedPref () async{
+     SharedPreferences preferences = await SharedPreferences.getInstance();
+     await preferences.clear();
+    }
+
+    return WillPopScope(
+      onWillPop: () async {
+        await sharedPref();
+       Navigator.push(
+            context, MaterialPageRoute(builder: (context) => WelcomeScreen()));
+            return false;
       },
+      child: PageView.builder(
+        onPageChanged: onChangedPage,
+        controller: controller,
+        itemCount: questions.length,
+        itemBuilder: (context, index) {
+          final question = questions[index];
+          return buildQuestion(question: question);
+        },
+      ),
     );
   }
 
   Widget buildQuestion({
+    BuildContext ? context,
     required Question question,
   }) =>
       SafeArea(
@@ -46,7 +63,10 @@ class QuestionsWidget extends StatelessWidget {
                 maxValue: 4,
                 currentValue: question.id,
                 displayText: '/${questions.length} Soru   ',
-                displayTextStyle: TextStyle(fontSize: 16, color: Colors.white,),
+                displayTextStyle: TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                ),
               ),
               const SizedBox(height: 32),
               // Center(
@@ -63,7 +83,10 @@ class QuestionsWidget extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
               ),
               SizedBox(height: 4),
-              Text('(Sorular arasında geçiş yapmak için ekranı kaydırın.)', style: TextStyle(color: Colors.grey),),
+              Text(
+                '(Sorular arasında geçiş yapmak için ekranı kaydırın.)',
+                style: TextStyle(color: Colors.grey),
+              ),
               SizedBox(height: 28),
               Expanded(
                 child: OptionsWidget(
@@ -71,6 +94,38 @@ class QuestionsWidget extends StatelessWidget {
                   onClickedOption: onClickedOption,
                 ),
               ),
+              question.id==4 ?
+              GestureDetector(
+                  child: Center(
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom:18.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.green.shade900,
+                          borderRadius: BorderRadius.circular(30),
+                          // border: Border.all(color: Colors.grey.shade200),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                              vertical: 16, horizontal: 20),
+                          child: Text(
+                            'Sonuçları Göster',
+                            style: TextStyle(
+                                fontSize: 15, fontWeight: FontWeight.w700, color: Colors.white),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  onTap: () {
+                    // Navigator.push(
+                    //   context!,
+                    //   MaterialPageRoute(
+                    //     builder: (context) => QuestionScreen(),
+                    //   ),
+                    // );
+                  },
+                ) : Container(),
               // Center(child: Text('Sorular arasında geçiş için ekranı kaydırın.', style: TextStyle(color: Colors.grey),))
             ],
           ),
