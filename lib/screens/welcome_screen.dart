@@ -30,7 +30,7 @@ class WelcomeScreen extends StatelessWidget {
                   'Welcome!',
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: 25,
+                      fontSize: 28,
                       fontWeight: FontWeight.w700),
                 ),
                 SizedBox(height: 15),
@@ -43,11 +43,11 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
-                          vertical: 8, horizontal: 10),
+                          vertical: 16, horizontal: 20),
                       child: Text(
                         'Teste Başla',
                         style: TextStyle(
-                            fontSize: 15, fontWeight: FontWeight.w700),
+                            fontSize: 15, fontWeight: FontWeight.w700, color: Colors.green.shade900),
                       ),
                     ),
                   ),
