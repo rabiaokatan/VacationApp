@@ -31,18 +31,18 @@ class _QuestionScreenState extends State<QuestionScreen> {
         ),
       );
 
- void selectOption(Option option) {
+  void selectOption(Option option) {
     // if (question!.isLocked ?? true) {
     //   return;
     // } else {
-      setState(() {
-        question!.isLocked = true;
-        question!.selectedOption = option;
-       });
-   // }
+    setState(() {
+      question!.isLocked = true;
+      question!.selectedOption = option;
+    });
+    // }
   }
 
-  void nextQuestion({int ?index}) {
+  void nextQuestion({int? index}) {
     final nextPage = controller!.page!.toInt() + 1;
     final indexPage = index ?? nextPage.toInt();
 
