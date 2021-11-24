@@ -39,7 +39,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
       question!.isLocked = true;
       question!.selectedOption = option;
     });
-    // }
+     //}
   }
 
   void nextQuestion({int? index}) {

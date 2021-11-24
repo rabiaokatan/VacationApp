@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class Option {
   final String text;
   final String tag;

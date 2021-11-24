@@ -1,38 +1,45 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vacation_app/models/option.dart';
 import 'package:flutter_vacation_app/models/question.dart';
+import 'package:flutter_vacation_app/models/vacation.dart';
 
 import '../responsive.dart';
 
 class OptionsWidget extends StatelessWidget {
-  final Question question;
-  final ValueChanged<Option> onClickedOption;
+  final Question? question;
+  final ValueChanged<Option>? onClickedOption;
+  List<String> tagList = [];
 
-  const OptionsWidget({
+  OptionsWidget({
     Key? key,
-    required this.question,
-    required this.onClickedOption,
+    /*required*/ this.question,
+    /* required*/ this.onClickedOption,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) => ListView(
         physics: BouncingScrollPhysics(),
-        children: question.options
+        children: question!.options
             .map((option) => buildOption(context, option))
             .toList(),
       );
 
   Widget buildOption(BuildContext context, Option option) {
-    final color = getColorForOption(option, question);
+    final color = getColorForOption(option, question!);
     Size _size = MediaQuery.of(context).size;
     bool isMobile = Responsive.isMobile(context);
-    bool isTablet= Responsive.isTablet(context);
-    bool isDesktop= Responsive.isDesktop(context);
+    bool isTablet = Responsive.isTablet(context);
 
     return GestureDetector(
-      onTap: () => onClickedOption(option),
+      onTap: () => onClickedOption!(option),
       child: Padding(
-        padding: EdgeInsets.only(bottom: _size.height*( isMobile ? 0.02 : isTablet ? 0.015 : 0.018)),
+        padding: EdgeInsets.only(
+            bottom: _size.height *
+                (isMobile
+                    ? 0.02
+                    : isTablet
+                        ? 0.015
+                        : 0.018)),
         child: Container(
           padding: EdgeInsets.all(12),
           decoration: BoxDecoration(
@@ -69,15 +76,34 @@ class OptionsWidget extends StatelessWidget {
       );
 
   Color getColorForOption(Option option, Question question) {
-    //   final isSelected = option == question.selectedOption;
-    //     return isSelected ? Colors.green : Colors.grey.shade200;
-    //  }
     final isSelected = option == question.selectedOption;
 
     if (!isSelected) {
       return Colors.grey.shade200.withOpacity(0.6);
     } else {
+      //TODO
+      for (int i = 0; i < questions.length; i++) {
+        if (questions[i].isLocked!) {
+          tagList.insert(i, questions[i].selectedOption!.tag);
+        }
+      }
+      getResult();
       return Colors.green;
+    }
+  }
+
+  void getResult() {
+    print("burada");
+    final Vacation vacation;
+    for (var item in vacations) {
+      // print("Tag list: ");
+      // print(tagList);
+      // print("item tags: ");
+      // print(item.tags);
+      //TODO
+      if (tagList == item.tags) {
+        print(item.id);
+      }
     }
   }
 }

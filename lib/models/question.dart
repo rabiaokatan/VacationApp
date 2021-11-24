@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 import 'option.dart';
 
 class Question {
@@ -33,7 +31,7 @@ List<Question> questions=[
     text: "Gideceğiniz yerde deniz olsun mu?" ,
   options: [
       Option(tag: 'sea', text: 'Evet'),
-      Option(tag: 'notSea', text: 'Hayır'),   
+      Option(tag: '', text: 'Hayır'),   
     ],
    ),
    Question(
@@ -41,7 +39,7 @@ List<Question> questions=[
     text: "Gideceğiniz yerde orman olsun mu?" ,
   options: [
       Option(tag: 'forest', text: 'Evet'),
-      Option(tag: 'notForest', text: 'Hayır'),     
+      Option(tag: '', text: 'Hayır'),     
     ],
    ),
    Question(
@@ -49,7 +47,7 @@ List<Question> questions=[
     text: "Gideceğiniz yerde deniz sporlarını denemek ister misiniz?" ,
   options: [
       Option(tag: 'seaSport', text: 'Evet'),
-      Option(tag: 'notSeaSport', text: 'Hayır'),   
+      Option(tag: '', text: 'Hayır'),   
     ],
    ),
 

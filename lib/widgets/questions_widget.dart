@@ -3,7 +3,6 @@ import 'package:flutter_vacation_app/models/option.dart';
 import 'package:flutter_vacation_app/models/question.dart';
 import 'package:flutter_animation_progress_bar/flutter_animation_progress_bar.dart';
 import 'package:flutter_vacation_app/responsive.dart';
-import 'package:flutter_vacation_app/screens/question_screen.dart';
 import 'package:flutter_vacation_app/screens/welcome_screen.dart';
 import 'package:flutter_vacation_app/widgets/options_widget.dart';
 
@@ -148,6 +147,10 @@ class QuestionsWidget extends StatelessWidget {
                       ),
                     ),
                     onTap: () {
+                      print("basildi");
+                      OptionsWidget().getResult();
+                      //option!.getResult();
+                      //OptionsWidget.getResult();
                       // Navigator.push(
                       //   context!,
                       //   MaterialPageRoute(
