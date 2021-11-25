@@ -1,7 +1,9 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vacation_app/models/option.dart';
 import 'package:flutter_vacation_app/models/question.dart';
 import 'package:flutter_animation_progress_bar/flutter_animation_progress_bar.dart';
+import 'package:flutter_vacation_app/models/vacation.dart';
 import 'package:flutter_vacation_app/responsive.dart';
 import 'package:flutter_vacation_app/screens/welcome_screen.dart';
 import 'package:flutter_vacation_app/widgets/options_widget.dart';
@@ -45,15 +47,20 @@ class QuestionsWidget extends StatelessWidget {
   }) {
     Size _size = MediaQuery.of(context!).size;
     bool isMobile = Responsive.isMobile(context);
-    bool isTablet= Responsive.isTablet(context);
-    bool isDesktop= Responsive.isDesktop(context);
+    bool isTablet = Responsive.isTablet(context);
+    bool isDesktop = Responsive.isDesktop(context);
+    List<String> tagList = [];
     return SafeArea(
       child: Container(
         padding: isMobile
-            ? EdgeInsets.all(_size.width*0.05)
+            ? EdgeInsets.all(_size.width * 0.05)
             : isTablet
-                ? EdgeInsets.symmetric(vertical: _size.height*0.05, horizontal: _size.width*0.2)
-                : EdgeInsets.symmetric(vertical: _size.height*0.10, horizontal: _size.width*0.1),
+                ? EdgeInsets.symmetric(
+                    vertical: _size.height * 0.05,
+                    horizontal: _size.width * 0.2)
+                : EdgeInsets.symmetric(
+                    vertical: _size.height * 0.10,
+                    horizontal: _size.width * 0.1),
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topLeft,
@@ -85,9 +92,13 @@ class QuestionsWidget extends StatelessWidget {
                 ),
               ],
             ),
-           SizedBox(height:_size.height*0.03),
+            SizedBox(height: _size.height * 0.03),
             Padding(
-              padding: isDesktop ? EdgeInsets.symmetric(vertical: _size.height*0.02, horizontal: _size.width*0.2) : EdgeInsets.all(0),
+              padding: isDesktop
+                  ? EdgeInsets.symmetric(
+                      vertical: _size.height * 0.02,
+                      horizontal: _size.width * 0.2)
+                  : EdgeInsets.all(0),
               child: FAProgressBar(
                 border: Border.all(color: Colors.grey.shade300),
                 borderRadius: BorderRadius.circular(30),
@@ -101,26 +112,32 @@ class QuestionsWidget extends StatelessWidget {
                 ),
               ),
             ),
-           SizedBox(height:_size.height*0.04),
+            SizedBox(height: _size.height * 0.04),
             Padding(
-              padding: isDesktop ? EdgeInsets.symmetric(vertical: _size.height*0.02, horizontal: _size.width*0.2) : EdgeInsets.all(0),
+              padding: isDesktop
+                  ? EdgeInsets.symmetric(
+                      vertical: _size.height * 0.02,
+                      horizontal: _size.width * 0.2)
+                  : EdgeInsets.all(0),
               child: Text(
                 question.text,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
               ),
             ),
-           SizedBox(height: _size.height*0.04),
-             
-              Expanded(
-                child: Padding(
-                 padding: isDesktop ? EdgeInsets.symmetric(vertical: _size.height*0.02, horizontal: _size.width*0.2) : EdgeInsets.all(0),
-                  child: OptionsWidget(
-                    question: question,
-                    onClickedOption: onClickedOption,
-                  ),
+            SizedBox(height: _size.height * 0.04),
+            Expanded(
+              child: Padding(
+                padding: isDesktop
+                    ? EdgeInsets.symmetric(
+                        vertical: _size.height * 0.02,
+                        horizontal: _size.width * 0.2)
+                    : EdgeInsets.all(0),
+                child: OptionsWidget(
+                  question: question,
+                  onClickedOption: onClickedOption,
                 ),
               ),
-            
+            ),
             question.id == 4
                 ? GestureDetector(
                     child: Center(
@@ -147,16 +164,12 @@ class QuestionsWidget extends StatelessWidget {
                       ),
                     ),
                     onTap: () {
-                      print("basildi");
-                      OptionsWidget().getResult();
-                      //option!.getResult();
-                      //OptionsWidget.getResult();
-                      // Navigator.push(
-                      //   context!,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => QuestionScreen(),
-                      //   ),
-                      // );
+                      for (int i = 0; i < questions.length; i++) {
+                        if (questions[i].isLocked!) {
+                          tagList.insert(i, questions[i].selectedOption!.tag);
+                        }
+                      }
+                      OptionsWidget().getResult(tagList);
                     },
                   )
                 : Container(),

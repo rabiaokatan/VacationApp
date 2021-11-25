@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vacation_app/models/option.dart';
 import 'package:flutter_vacation_app/models/question.dart';
@@ -8,7 +9,7 @@ import '../responsive.dart';
 class OptionsWidget extends StatelessWidget {
   final Question? question;
   final ValueChanged<Option>? onClickedOption;
-  List<String> tagList = [];
+  //List<String> tagList = [];
 
   OptionsWidget({
     Key? key,
@@ -81,27 +82,14 @@ class OptionsWidget extends StatelessWidget {
     if (!isSelected) {
       return Colors.grey.shade200.withOpacity(0.6);
     } else {
-      //TODO
-      for (int i = 0; i < questions.length; i++) {
-        if (questions[i].isLocked!) {
-          tagList.insert(i, questions[i].selectedOption!.tag);
-        }
-      }
-      getResult();
       return Colors.green;
     }
   }
 
-  void getResult() {
-    print("burada");
+  void getResult(List tagList) {
     final Vacation vacation;
     for (var item in vacations) {
-      // print("Tag list: ");
-      // print(tagList);
-      // print("item tags: ");
-      // print(item.tags);
-      //TODO
-      if (tagList == item.tags) {
+      if (listEquals(tagList, item.tags)) {
         print(item.id);
       }
     }
