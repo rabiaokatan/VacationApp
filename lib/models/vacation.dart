@@ -15,7 +15,7 @@ class Vacation {
 List<Vacation> vacations = [
   Vacation(
     id: 1,
-    tags: ["hot", "sea", "", ""],
+    tags: ["hot", "sea"],
     photUrl: "",
     text: "asasdasdsf",
   ),

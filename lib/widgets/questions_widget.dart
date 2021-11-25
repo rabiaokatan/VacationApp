@@ -149,16 +149,21 @@ class QuestionsWidget extends StatelessWidget {
                         onTap: () {
                           for (int i = 0; i < questions.length; i++) {
                             if (questions[i].isLocked!) {
-                              tagList.insert(i, questions[i].selectedOption!.tag);
+                              if (questions[i].selectedOption!.tag != "") {
+                                tagList.insert(
+                                    i, questions[i].selectedOption!.tag);
+                              }
                             }
                           }
-                          Vacation? y;
-                          y = OptionsWidget().getResult(tagList);
+                         
+                          List<Vacation> resultListVacation =
+                              OptionsWidget().getResult(tagList);
+
                           Navigator.push(
                             context,
                             MaterialPageRoute(
                               builder: (context) => ResultScreen(
-                                vacation: y!,
+                                listVacation: resultListVacation,
                               ),
                             ),
                           );

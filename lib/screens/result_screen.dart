@@ -5,10 +5,10 @@ import 'package:flutter_vacation_app/models/vacation.dart';
 import '../responsive.dart';
 
 class ResultScreen extends StatelessWidget {
-  Vacation vacation;
+  List<Vacation> listVacation =[];
   ResultScreen({
     Key? key,
-    required this.vacation,
+    required this.listVacation,
   }) : super(key: key);
 
   @override
@@ -64,8 +64,7 @@ class ResultScreen extends StatelessWidget {
                     )),
               ),
               Spacer(),
-              // SizedBox(height: _size.height*0.05),
-              Text(vacation.id.toString()),
+               Text(listVacation[0].id.toString()),
               Spacer(flex: 4),
             ],
           ),
