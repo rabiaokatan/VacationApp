@@ -86,12 +86,13 @@ class OptionsWidget extends StatelessWidget {
     }
   }
 
-  void getResult(List tagList) {
-    final Vacation vacation;
+  Vacation getResult(List tagList) {
+    Vacation ?x;
     for (var item in vacations) {
       if (listEquals(tagList, item.tags)) {
-        print(item.id);
+        x=item;
       }
     }
+    return x!;
   }
 }

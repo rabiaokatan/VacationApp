@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_vacation_app/screens/question_screen.dart';
+import 'package:flutter_vacation_app/widgets/button.dart';
 
 import '../responsive.dart';
 
@@ -34,31 +35,19 @@ class WelcomeScreen extends StatelessWidget {
                       fontWeight: FontWeight.w700),
                 ),
                 SizedBox(height: 15),
-                GestureDetector(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(30),
-                      // border: Border.all(color: Colors.grey.shade200),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                          vertical: 16, horizontal: 20),
-                      child: Text(
-                        'Teste Başla',
-                        style: TextStyle(
-                            fontSize: 15, fontWeight: FontWeight.w700, color: Colors.green.shade900),
-                      ),
-                    ),
-                  ),
+                button(
+                  context: context,
                   onTap: () {
-                    Navigator.push(
+                     Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) => QuestionScreen(),
                       ),
                     );
                   },
+                  text: "Teste Başla",
+                  color: Colors.white,
+                  textColor: Colors.green.shade900,
                 ),
               ],
             ),

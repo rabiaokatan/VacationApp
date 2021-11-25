@@ -5,7 +5,9 @@ import 'package:flutter_vacation_app/models/question.dart';
 import 'package:flutter_animation_progress_bar/flutter_animation_progress_bar.dart';
 import 'package:flutter_vacation_app/models/vacation.dart';
 import 'package:flutter_vacation_app/responsive.dart';
+import 'package:flutter_vacation_app/screens/result_screen.dart';
 import 'package:flutter_vacation_app/screens/welcome_screen.dart';
+import 'package:flutter_vacation_app/widgets/button.dart';
 import 'package:flutter_vacation_app/widgets/options_widget.dart';
 
 class QuestionsWidget extends StatelessWidget {
@@ -56,7 +58,7 @@ class QuestionsWidget extends StatelessWidget {
             ? EdgeInsets.all(_size.width * 0.05)
             : isTablet
                 ? EdgeInsets.symmetric(
-                    vertical: _size.height * 0.05,
+                    vertical: _size.height * 0.25,
                     horizontal: _size.width * 0.2)
                 : EdgeInsets.symmetric(
                     vertical: _size.height * 0.10,
@@ -139,38 +141,33 @@ class QuestionsWidget extends StatelessWidget {
               ),
             ),
             question.id == 4
-                ? GestureDetector(
-                    child: Center(
-                      child: Padding(
-                        padding: const EdgeInsets.only(bottom: 18.0),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            color: Colors.green.shade900,
-                            borderRadius: BorderRadius.circular(30),
-                            // border: Border.all(color: Colors.grey.shade200),
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(
-                                vertical: 16, horizontal: 20),
-                            child: Text(
-                              'Sonuçları Göster',
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w700,
-                                  color: Colors.white),
+                ? Center(
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom: 18.0),
+                      child: button(
+                        context: context,
+                        onTap: () {
+                          for (int i = 0; i < questions.length; i++) {
+                            if (questions[i].isLocked!) {
+                              tagList.insert(i, questions[i].selectedOption!.tag);
+                            }
+                          }
+                          Vacation? y;
+                          y = OptionsWidget().getResult(tagList);
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ResultScreen(
+                                vacation: y!,
+                              ),
                             ),
-                          ),
-                        ),
+                          );
+                        },
+                        text: "Sonuçları Göster",
+                        color: Colors.green.shade900,
+                        textColor: Colors.white,
                       ),
                     ),
-                    onTap: () {
-                      for (int i = 0; i < questions.length; i++) {
-                        if (questions[i].isLocked!) {
-                          tagList.insert(i, questions[i].selectedOption!.tag);
-                        }
-                      }
-                      OptionsWidget().getResult(tagList);
-                    },
                   )
                 : Container(),
           ],
