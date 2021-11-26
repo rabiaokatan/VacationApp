@@ -17,7 +17,6 @@ class QuestionsWidget extends StatelessWidget {
 
   QuestionsWidget({
     Key? key,
-    // required this.context,
     required this.controller,
     required this.onChangedPage,
     required this.onClickedOption,
@@ -76,6 +75,7 @@ class QuestionsWidget extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+                question.id !=questions[0].id ?
                 IconButton(
                   onPressed: () {
                     controller.previousPage(
@@ -83,7 +83,8 @@ class QuestionsWidget extends StatelessWidget {
                         curve: Curves.easeInOut);
                   },
                   icon: Icon(Icons.arrow_back_ios_new_rounded),
-                ),
+                ): Container(),
+                question.id !=questions[questions.length-1].id ?
                 IconButton(
                   onPressed: () {
                     controller.nextPage(
@@ -91,7 +92,7 @@ class QuestionsWidget extends StatelessWidget {
                         curve: Curves.easeInOut);
                   },
                   icon: Icon(Icons.arrow_forward_ios_rounded),
-                ),
+                ) : Container(),
               ],
             ),
             SizedBox(height: _size.height * 0.03),
@@ -140,7 +141,7 @@ class QuestionsWidget extends StatelessWidget {
                 ),
               ),
             ),
-            question.id == 4
+           question.id == questions[questions.length-1].id
                 ? Center(
                     child: Padding(
                       padding: const EdgeInsets.only(bottom: 18.0),

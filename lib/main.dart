@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_vacation_app/screens/result_screen.dart';
 
 import 'screens/welcome_screen.dart';
 
