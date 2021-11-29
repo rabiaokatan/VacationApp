@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_vacation_app/api/vacation_api.dart';
 import 'package:flutter_vacation_app/models/option.dart';
 import 'package:flutter_vacation_app/models/question.dart';
 import 'package:flutter_vacation_app/models/vacation.dart';
@@ -86,16 +87,19 @@ class OptionsWidget extends StatelessWidget {
     }
   }
 
-  List<Vacation> getResult(List tagList) {
- 
+  List<Vacation> getResult(List tagList, BuildContext context) {
+    
     List<Vacation> resultVacationList = [];
-    for (var item in vacations) {
-      if (listEquals(tagList, item.tags)) {
-       
-        resultVacationList.add(item);
 
+    List<Vacation> vacations = [];
+    VacationApi.getUsersLocally(context).then((value) {
+      vacations = value;
+      for (var item in vacations) {
+        if (listEquals(tagList, item.tags)) {
+          resultVacationList.add(item);
+        }
       }
-    }
+    });
     return resultVacationList;
   }
 }
