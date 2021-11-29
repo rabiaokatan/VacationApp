@@ -17,21 +17,14 @@ class ResultScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: buildPages(context, listVacation),
-      ),
-    );
-  }
-}
-
-Widget buildPages(BuildContext context, List<Vacation> listVacation) {
-  Size _size = MediaQuery.of(context).size;
+    Size _size = MediaQuery.of(context).size;
   bool isMobile = Responsive.isMobile(context);
   bool isTablet = Responsive.isTablet(context);
   bool isDesktop = Responsive.isDesktop(context);
   CarouselController buttonCarouselController = CarouselController();
-  return Container(
+    return SafeArea(
+      child: Scaffold(
+        body: Container(
     width: double.infinity,
     decoration: BoxDecoration(
       gradient: LinearGradient(
@@ -110,5 +103,8 @@ Widget buildPages(BuildContext context, List<Vacation> listVacation) {
         );
       }).toList(),
     ),
-  );
+  ),
+      ),
+    );
+  }
 }
