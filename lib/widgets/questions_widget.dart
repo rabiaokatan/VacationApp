@@ -109,7 +109,7 @@ class QuestionsWidget extends StatelessWidget {
                 border: Border.all(color: Colors.grey.shade300),
                 borderRadius: BorderRadius.circular(30),
                 progressColor: Colors.green.shade900,
-                maxValue: 4,
+                maxValue: questions.length,
                 currentValue: question.id,
                 displayText: '/${questions.length} Soru   ',
                 displayTextStyle: TextStyle(
@@ -184,4 +184,3 @@ class QuestionsWidget extends StatelessWidget {
     );
   }
 }
-

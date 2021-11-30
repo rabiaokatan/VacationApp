@@ -16,7 +16,6 @@
         ],
         "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
         "text": "asasdasdsf"
-        
     },
     {
         "id": 3,
@@ -27,6 +26,29 @@
         ],
         "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
         "text": "asasdasdsf"
-        
+    },
+    {
+        "id": 4,
+        "tags": [
+            "hot",
+            "sea",
+            "forest",
+            "seaSport",
+            "historicalPlaces"
+        ],
+        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
+        "text": "asasdasdsf"
+    },
+    {
+        "id": 5,
+        "tags": [
+            "hot",
+            "sea",
+            "forest",
+            "historicalPlaces",
+            "ocean"
+        ],
+        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
+        "text": "asasdasdsf"
     }
 ]

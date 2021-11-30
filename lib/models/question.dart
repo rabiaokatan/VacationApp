@@ -50,6 +50,53 @@ List<Question> questions=[
       Option(tag: '', text: 'Hayır'),   
     ],
    ),
-
+ Question(
+    id: 5,
+    text: "Gideceğiniz yerde tarihi yapılar bulunsun mu?" ,
+  options: [
+      Option(tag: 'historicalPlaces', text: 'Evet'),
+      Option(tag: '', text: 'Hayır'),   
+    ],
+   ),
+    Question(
+    id: 6,
+    text: "Gideceğiniz yerde okyanus olsun mu?" ,
+  options: [
+      Option(tag: 'ocean', text: 'Evet'),
+      Option(tag: '', text: 'Hayır'),   
+    ],
+   ),
+    Question(
+    id: 7,
+    text: "Uzak doğu seyehati yapmak ister misiniz?" ,
+  options: [
+      Option(tag: 'farEast', text: 'Evet'),
+      Option(tag: '', text: 'Hayır'),   
+    ],
+   ),
+    Question(
+    id: 8,
+    text: "Seyahatiniz sırasında egzotik hayvanlar görmek ister misiniz?" ,
+  options: [
+      Option(tag: 'exoticPets', text: 'Evet'),
+      Option(tag: '', text: 'Hayır'),   
+    ],
+   ),
+    Question(
+    id: 9,
+    text: "Bir adaya gitmek ister misiniz?" ,
+  options: [
+      Option(tag: 'island', text: 'Evet'),
+      Option(tag: '', text: 'Hayır'),   
+    ],
+   ),
+    Question(
+    id: 10,
+    text: "Kuzey ışıklarını görmek ister misiniz?" ,
+  options: [
+      Option(tag: 'northernLights', text: 'Evet'),
+      Option(tag: '', text: 'Hayır'),   
+    ],
+   ),
 
 ];

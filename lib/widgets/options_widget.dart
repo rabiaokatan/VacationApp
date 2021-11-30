@@ -98,6 +98,9 @@ class OptionsWidget extends StatelessWidget {
         if (listEquals(tagList, item.tags)) {
           resultVacationList.add(item);
         }
+        else if(tagList.every((element) => item.tags.contains(element))){
+          resultVacationList.add(item);
+        }
       }
     });
     return resultVacationList;
