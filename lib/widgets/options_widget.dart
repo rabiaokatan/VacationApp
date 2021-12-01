@@ -90,7 +90,7 @@ class OptionsWidget extends StatelessWidget {
   List<Vacation> getResult(List tagList, BuildContext context) {
     
     List<Vacation> resultVacationList = [];
-
+    print("vvvttt: $tagList");
     List<Vacation> vacations = [];
     VacationApi.getUsersLocally(context).then((value) {
       vacations = value;

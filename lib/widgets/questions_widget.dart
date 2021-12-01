@@ -156,12 +156,13 @@ class QuestionsWidget extends StatelessWidget {
                               if (questions[i].selectedOption!.tag != "") {
                                 tagList.insert(
                                     i, questions[i].selectedOption!.tag);
+                                     print('r: ${questions[i].selectedOption!.tag}');
                               }
                             }
                           }
                           List<Vacation> resultListVacation =
                               OptionsWidget().getResult(tagList, context);
-
+              
                           Navigator.push(
                             context,
                             MaterialPageRoute(

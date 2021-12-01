@@ -32,14 +32,10 @@ class _QuestionScreenState extends State<QuestionScreen> {
       );
 
   void selectOption(Option option) {
-    // if (question!.isLocked ?? true) {
-    //   return;
-    // } else {
     setState(() {
       question!.isLocked = true;
       question!.selectedOption = option;
     });
-     //}
   }
 
   void nextQuestion({int? index}) {

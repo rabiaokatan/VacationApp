@@ -1,46 +1,245 @@
 [
     {
         "id": 1,
+        "name": "Giraffe Manor (Nairobi-Kenya)",
         "tags": [
             "hot",
-            "sea"
+            "forest",
+            "exoticPets"
         ],
-        "photUrl": "assets/images/welcome_page_bg.jpg",
-        "text": "asasdasdsf"
+        "photUrl": "https://www.tailormadeafrica.com/wp-content/uploads/Giraffe-Manor-Nairobi-Kenya-Aerial-View.jpg",
+        "text": "1930'larda inşa edilmiş, bahçeli bir malikanede yer alan bu lüks ve her şey dahil otelde nesli tükenmekte olan bir zürafa sürüsü yaşar."
     },
     {
         "id": 2,
+        "name": "Nayara Gardens (Kosta Rika)",
         "tags": [
             "hot",
-            "sea"
+            "forest",
+            "historicalPlaces",
+            "exoticPets"
         ],
-        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
-        "text": "asasdasdsf"
+        "photUrl": "https://ak-d.tripcdn.com/images/220t190000017ekgaDFE4_Z_550_412_R5_Q70_D.jpg",
+        "text": "Arenal Volkanı Ulusal Parkı'nın içinde bulunan bu lüks otelin tropikal bahçelerinde 500'den fazla kuş türünü ve birbirinden farklı hayvanları gözlemleyebilir, yerel lezzetleri deneyimleyebilirsiniz."
     },
     {
         "id": 3,
+        "name": "Milaidhoo (Maldivler)",
         "tags": [
             "hot",
             "sea",
-            "forest"
+            "seaSports",
+            "ocean",
+            "exoticPets",
+            "island"
         ],
-        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
-        "text": "asasdasdsf"
+        "photUrl": "https://i.travelapi.com/hotels/14000000/13590000/13580100/13580026/11806306_z.jpg",
+        "text": "Maldivler'de bulunan bu muhteşem manzaralı adada farklı deniz sporlarını deneyimleyip, ilginç balık türlerini keşfedebilirsiniz."
     },
     {
         "id": 4,
+        "name": "Mission Point Resort (Mackinac Adası-ABD)",
         "tags": [
             "hot",
             "sea",
             "forest",
-            "seaSport",
+            "island"
+        ],
+        "photUrl": "https://2486634c787a971a3554-d983ce57e4c84901daded0f67d5a004f.ssl.cf1.rackcdn.com/mission-point/media/header-img-58a5bf8a37655.jpg",
+        "text": "Mackinac Adası'nda bulunan bu güzel otelde doğanın ve denizin keyfini doyasıya çıkarabilirsiniz."
+    },
+    {
+        "id": 5,
+        "name": "The Sagamore Resort (ABD)",
+        "tags": [
+            "hot",
+            "cold",
+            "sea",
+            "forest"
+        ],
+        "photUrl": "https://i.pinimg.com/originals/ed/6b/3e/ed6b3eb83ad3d7b80e23d6041f47b5a4.jpg",
+        "text": "George Gölü'nün kıyısında bulunan, yaz-kış keyifle vakit geçirebileceğiniz bu otelde eğer kış aylarında giderseniz kayak yapma fırsatı bulabilirsiniz."
+    },
+    {
+        "id": 6,
+        "name": "Tyler Place Family Resort (Vermont-ABD)",
+        "tags": [
+            "hot",
+            "sea",
+            "forest",
+            "seaSport"
+        ],
+        "photUrl": "https://res.cloudinary.com/resortsandlodges/image/fetch/w_800,h_520,c_fill/https://media.travelnetsolutions.com/1312d806ad74de35ba71c368c4b50949/original.jpg",
+        "text": "Deniz kıyısında büyük bir ormanın içinde yer alan bu otelde ailenizle keyifli vakit geçirip, çeşitli sportif aktiviteler yapabilirsiniz."
+    },
+    {
+        "id": 7,
+        "name": "Williamsburg (New York-ABD)",
+        "tags": [
+            "hot",
+            "cool",
             "historicalPlaces"
+        ],
+        "photUrl": "https://img1.10bestmedia.com/Images/Photos/382776/20201030-Pano--coach-and-street_54_990x660.jpg",
+        "text": "Burası ABD'nin en tarihi bölgelerinden biridir. Yaklaşık 70 hektarlık alanı kapsayan tarihi alan, 17 ve 19. yüzyıllar arasında inşa edilen sömürge Revival yapılar ve yeni dizaynlar içermektedir. "
+    },
+    {
+        "id": 8,
+        "name": "Efes Antik Kenti (İzmir-Türkiye)",
+        "tags": [
+            "hot",
+            "cool",
+            "historicalPlaces"
+        ],
+        "photUrl": "http://antiquelodgecamp.com/wp-content/uploads/2020/07/efes-antik-tiyatro-2.jpg",
+        "text": "Efes Antik Kenti MÖ 8600 dönemine basit bir yerleşim olarak başlamış. Yüzyıllar içinde büyüyerek döneminin en önemli dünya başkentlerinden birisi olmuş."
+    },
+    {
+        "id": 9,
+        "name": "",
+        "tags": [
+            "hot",
+            "sea",
+            "forest",
+            "historicalPlaces",
+            "ocean"
         ],
         "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
         "text": "asasdasdsf"
     },
     {
-        "id": 5,
+        "id": 10,
+        "name": "",
+        "tags": [
+            "hot",
+            "sea",
+            "forest",
+            "historicalPlaces",
+            "ocean"
+        ],
+        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
+        "text": "asasdasdsf"
+    },
+    {
+        "id": 11,
+        "name": "",
+        "tags": [
+            "hot",
+            "sea",
+            "forest",
+            "historicalPlaces",
+            "ocean"
+        ],
+        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
+        "text": "asasdasdsf"
+    },
+    {
+        "id": 12,
+        "name": "",
+        "tags": [
+            "hot",
+            "sea",
+            "forest",
+            "historicalPlaces",
+            "ocean"
+        ],
+        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
+        "text": "asasdasdsf"
+    },
+    {
+        "id": 13,
+        "name": "",
+        "tags": [
+            "hot",
+            "sea",
+            "forest",
+            "historicalPlaces",
+            "ocean"
+        ],
+        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
+        "text": "asasdasdsf"
+    },
+    {
+        "id": 14,
+        "name": "",
+        "tags": [
+            "hot",
+            "sea",
+            "forest",
+            "historicalPlaces",
+            "ocean"
+        ],
+        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
+        "text": "asasdasdsf"
+    },
+    {
+        "id": 15,
+        "name": "",
+        "tags": [
+            "hot",
+            "sea",
+            "forest",
+            "historicalPlaces",
+            "ocean"
+        ],
+        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
+        "text": "asasdasdsf"
+    },
+    {
+        "id": 16,
+        "name": "",
+        "tags": [
+            "hot",
+            "sea",
+            "forest",
+            "historicalPlaces",
+            "ocean"
+        ],
+        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
+        "text": "asasdasdsf"
+    },
+    {
+        "id": 17,
+        "name": "",
+        "tags": [
+            "hot",
+            "sea",
+            "forest",
+            "historicalPlaces",
+            "ocean"
+        ],
+        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
+        "text": "asasdasdsf"
+    },
+    {
+        "id": 18,
+        "name": "",
+        "tags": [
+            "hot",
+            "sea",
+            "forest",
+            "historicalPlaces",
+            "ocean"
+        ],
+        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
+        "text": "asasdasdsf"
+    },
+    {
+        "id": 19,
+        "name": "",
+        "tags": [
+            "hot",
+            "sea",
+            "forest",
+            "historicalPlaces",
+            "ocean"
+        ],
+        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
+        "text": "asasdasdsf"
+    },
+    {
+        "id": 20,
+        "name": "",
         "tags": [
             "hot",
             "sea",
