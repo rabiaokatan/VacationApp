@@ -96,94 +96,95 @@
     },
     {
         "id": 9,
-        "name": "",
+        "name": "Aizanoi Antik Kenti (Kütahya-Türkiye)",
         "tags": [
             "hot",
-            "sea",
-            "forest",
-            "historicalPlaces",
-            "ocean"
+            "cool",
+            "historicalPlaces"
         ],
-        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
-        "text": "asasdasdsf"
+        "photUrl": "https://im.haberturk.com/2021/01/22/ver1611299542/2946402_1920x1080.jpg",
+        "text": "Aizanoi kenti, antik Frigya'ya bağlı olarak yaşayan Aizanitis’lerin ana yerleşim merkeziydi. Kentin yüksek platosu üzerinde bulunan Zeus Tapınağı'nın çevresinde yapılan kazılarda, MÖ 3 bin yıllarına ait yerleşim izlerinin ortaya çıktığı görülmüştür."
     },
     {
         "id": 10,
-        "name": "",
+        "name": "Afrodisias Antik Kenti (Aydın-Türkiye)",
         "tags": [
             "hot",
-            "sea",
+            "cool",
             "forest",
-            "historicalPlaces",
-            "ocean"
+            "historicalPlaces"
         ],
-        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
-        "text": "asasdasdsf"
+        "photUrl": "https://img-s3.onedio.com/id-59636828902602b110517c75/rev-0/w-900/h-599/f-jpg/s-82428c47ff576ebbf744f9f48f3185f203a71f9c.jpg",
+        "text": "Adını aşk ve güzellik tanrıçası Aphrodite’den alan Aphrodisias özellikle Roma çağında Aphrodithe tapınımı ile ünlenmiş antik bir kent olup, günümüzde de çok iyi korunmuş anıt yapıları ile Türkiye’nin en önemli arkeolojik yerlerinden biridir."
     },
     {
         "id": 11,
-        "name": "",
+        "name": "Topkapı Sarayı (İstanbul-Türkiye)",
         "tags": [
             "hot",
+            "cool",
             "sea",
             "forest",
-            "historicalPlaces",
-            "ocean"
+            "historicalPlaces"
         ],
-        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
-        "text": "asasdasdsf"
+        "photUrl": "https://gezginsitesi.com/wp-content/uploads/2019/01/topkap%C4%B1-saray%C4%B1-foto%C4%9Fraflar%C4%B1-1.jpg",
+        "text": "1453 yılında İstanbul’un fethi sonrasında Fatih Sultan Mehmet’in isteği üzerine 1460 yıllarında yapımına başlanan Topkapı Sarayı’nın inşası 1478 yılında tamamlanmıştır. Ayrıca Topkapı Sarayı, konum itibariyle İstanbul’un en eski tarihî bölgelerinden birinde konumlanmaktadır."
     },
     {
         "id": 12,
-        "name": "",
+        "name": "Yalıboyu Evleri (Amasya-Türkiye)",
         "tags": [
             "hot",
             "sea",
+            "cool",
+            "sea",
             "forest",
-            "historicalPlaces",
-            "ocean"
+            "historicalPlaces"
         ],
-        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
-        "text": "asasdasdsf"
+        "photUrl": "https://cdn1.ntv.com.tr/gorsel/Iov0W1K_RUGHW5W8M63VuA.jpg?width=1000&mode=both&scale=both&v=1610364619175",
+        "text": "Şehrin merkezinden geçen Yeşilırmak'ın kenarında sıralanan ve geleneksel Osmanlı evinin bütün özelliklerini bünyesinde taşıyan Amasya evleri bu şehri görmek için iyi bir neden."
     },
     {
         "id": 13,
-        "name": "",
+        "name": "Hotellerie de Mascognaz (İtalya)",
         "tags": [
             "hot",
-            "sea",
-            "forest",
-            "historicalPlaces",
-            "ocean"
+            "cool",
+            "forest"
         ],
-        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
-        "text": "asasdasdsf"
+        "photUrl": "https://www.hotelleriedemascognaz.com/wp-content/uploads/2017/01/il-villaggio-di-mascognaz.jpg",
+        "text": "Eşsiz doğasıyla büyüleyen, yaz-kış seyahat edebileceğiniz bu güzel mekanda kış aylarında kayak da yapabilirsiniz."
     },
     {
         "id": 14,
-        "name": "",
+        "name": "Sadie Cove Wilderness Lodge (Alaska-ABD)",
         "tags": [
             "hot",
             "sea",
             "forest",
-            "historicalPlaces",
-            "ocean"
+            "ocean",
+            "exoticPets"
         ],
-        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
-        "text": "asasdasdsf"
+        "photUrl": "https://www.eco-tropicalresorts.com/wp-content/uploads/2014/08/Alaska-SadieCove.jpg",
+        "text": "Bu güzel Wilderness Lodge Alaska'nın Kachemak Körfezi Eyalet Parkı içinde, Seldovia ve Halibut Koyu köylerinin tam ortasında ve “Dünyanın Ayı Görüntüleme Başkenti” Alaska Homer'dan tekneyle sadece 16 mil uzakta, özel bir plajda yer almaktadır. (Aynı zamanda Kenai Fiyortları Ulusal Parkı, Clark Gölü Ulusal Parkı ve Katmai Ulusal Parkı'nın giriş kapısıdır.) Sadie Koyu, hayalini kurduğunuz her şey ve daha fazlasına sahip."
     },
     {
         "id": 15,
-        "name": "",
+        "name": "Jeju Adası (Güney Kore)",
         "tags": [
             "hot",
+            "cool",
             "sea",
+            "ocean",
             "forest",
+            "seaSport",
             "historicalPlaces",
-            "ocean"
+            "ocean",
+            "farEast",
+            "island"
         ],
-        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
-        "text": "asasdasdsf"
+        "photUrl": "https://gezebilirsin.com/wp-content/uploads/2020/10/jeju-adasi-manzara.png",
+        "text": "Güney Kore'nin en büyük adası olan Jeju Adası'nda doğanın keyfini çıkarıp, eşsiz okyanusu izleyebilir, çeşitli su sporları yapabilirsiniz. Ayrıca adada bulunan müzeleri de ziyaret edebilirsiniz."
     },
     {
         "id": 16,

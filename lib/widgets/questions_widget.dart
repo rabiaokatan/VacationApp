@@ -153,10 +153,8 @@ class QuestionsWidget extends StatelessWidget {
                         onTap: () {
                           for (int i = 0; i < questions.length; i++) {
                             if (questions[i].isLocked!) {
-                              if (questions[i].selectedOption!.tag != "") {
-                                tagList.insert(
-                                    i, questions[i].selectedOption!.tag);
-                                     print('r: ${questions[i].selectedOption!.tag}');
+                              if (questions[i].selectedOption!.tag != '') {
+                                tagList.add(questions[i].selectedOption!.tag);
                               }
                             }
                           }
