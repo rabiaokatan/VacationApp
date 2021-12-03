@@ -188,67 +188,60 @@
     },
     {
         "id": 16,
-        "name": "",
+        "name": "Vail (Colorado-ABD)",
         "tags": [
-            "hot",
-            "sea",
-            "forest",
-            "historicalPlaces",
-            "ocean"
+            "cool",
+            "forest"
         ],
-        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
-        "text": "asasdasdsf"
+        "photUrl": "https://www.planetware.com/wpimages/2021/10/colorado-vail-top-attractions-things-to-do-ski-the-slopes.jpg",
+        "text": "Kış aylarında Vail Dağı yamaçlarında kayak yapabilir; yaz aylarında ise dağ yollarında yürüyüş yapıp eşsiz manzaranın keyfini çıkarabilirsiniz."
     },
     {
         "id": 17,
-        "name": "",
+        "name": "Fairbanks (Alaska-ABD)",
         "tags": [
-            "hot",
-            "sea",
-            "forest",
-            "historicalPlaces",
-            "ocean"
+            "cool",
+            "northernLights"
         ],
-        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
-        "text": "asasdasdsf"
+        "photUrl": "https://cdn1.matadornetwork.com/blogs/1/2014/03/%C2%A9ScottSporleder-Aurora-38.jpg",
+        "text": "Fairbanks'in aurora sezonu 21 Ağustos ile 21 Nisan arasındadır. Gökyüzü yeterince açık ve karanlık olduğunda Fairbanks'te ortalama beş gecenin dördünde aurora  görülmektedir."
     },
     {
         "id": 18,
-        "name": "",
+        "name": "Svalbard (Norveç)",
         "tags": [
-            "hot",
+            "cool",
             "sea",
             "forest",
             "historicalPlaces",
-            "ocean"
+            "ocean",
+            "island",
+            "northernLights"
         ],
-        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
-        "text": "asasdasdsf"
+        "photUrl": "http://www.nightlife-cityguide.com/wp-content/uploads/2020/02/Norvegia-1038x576.jpg",
+        "text": "Svalbard, Arktik Okyanusu'nde Norveç'e bağlı takımadadır. Burada kuzey ışıklarını görebilir, adanın tarihi mimarisini inceleyerek keyifli vakit geçirebilirsiniz."
     },
     {
         "id": 19,
-        "name": "",
+        "name": "Tromsø (Norveç)",
         "tags": [
             "hot",
+            "cool",
             "sea",
-            "forest",
-            "historicalPlaces",
-            "ocean"
+            "northernLights"
         ],
-        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
-        "text": "asasdasdsf"
+        "photUrl": "https://www.visittromso.no/sites/cb_tromso/files/styles/slide_xlarge/public/2200x1200_NordlysTroms%C3%B8Sentrum_Vegard%20Stien.jpg?h=cb1d9225&itok=1gKrehgP",
+        "text": "Norveç'in Tromsø şehrinde kuzey ışıklarının keyfini çıkarabilirsiniz."
     },
     {
         "id": 20,
-        "name": "",
+        "name": "Kakslauttanen Resort (Finlandiya)",
         "tags": [
-            "hot",
-            "sea",
+            "cool",
             "forest",
-            "historicalPlaces",
-            "ocean"
+            "northernLights"
         ],
-        "photUrl": "assets/images/welcome_screen_bg_desktop.jpeg",
-        "text": "asasdasdsf"
+        "photUrl": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/96/97/969707_v3.jpeg",
+        "text": "Finalndiya'da bulunan bu iglo evlerde kalarak kuzey ışıklarının keyfini doyasıya çıkarabilirsiniz."
     }
 ]
