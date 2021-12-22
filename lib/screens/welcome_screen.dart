@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_vacation_app/constants.dart';
 import 'package:flutter_vacation_app/screens/question_screen.dart';
 import 'package:flutter_vacation_app/widgets/button.dart';
 
@@ -29,18 +30,27 @@ class WelcomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Padding(
-                  padding:  EdgeInsets.symmetric(horizontal:_size.width*0.05),
-                  child: Text(
-                    'Tatile gitmek istiyorsunuz ancak nasıl bir tatil yapmak istediğinize ve nereye gideceğinize henüz karar veremediniz mi? Öyleyse testteki soruları cevaplayın, biz de size en uygun tatil yerlerini önerelim.',
-                    style: TextStyle(
-                        color: Colors.green.shade900,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w500),
-                    textAlign: TextAlign.center,
+                  padding: EdgeInsets.symmetric(
+                      horizontal: _size.width * (isDesktop ? 0.3 : 0.05)),
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.5),
+                        borderRadius: BorderRadius.circular(20)),
+                    child: Padding(
+                      padding: EdgeInsets.all(_size.height*0.02),
+                      child: Text(
+                        'Tatile gitmek istiyorsunuz ancak nasıl bir tatil yapmak istediğinize ve nereye gideceğinize henüz karar veremediniz mi? Öyleyse testteki soruları cevaplayın, biz de size en uygun tatil yerlerini önerelim.',
+                        style: TextStyle(
+                            color: kPrimaryColor,
+                            fontSize: isDesktop ? 24 : 18,
+                            fontWeight: isDesktop ? FontWeight.bold : FontWeight.w500),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(bottom: _size.height*0.3),
+                  padding: EdgeInsets.only(bottom: _size.height * 0.3),
                   child: button(
                     context: context,
                     onTap: () {
@@ -52,8 +62,8 @@ class WelcomeScreen extends StatelessWidget {
                       );
                     },
                     text: "Teste Başla",
-                    color: Colors.white,
-                    textColor: Colors.green.shade900,
+                    color: Colors.white.withOpacity(0.6),
+                    textColor: kPrimaryColor,
                   ),
                 ),
               ],

@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_vacation_app/constants.dart';
 import 'package:flutter_vacation_app/models/option.dart';
 import 'package:flutter_vacation_app/models/question.dart';
 import 'package:flutter_animation_progress_bar/flutter_animation_progress_bar.dart';
@@ -66,7 +67,7 @@ class QuestionsWidget extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: <Color>[Colors.green.shade100, Colors.green.shade400],
+            colors: <Color>[kDoubleLightColor, kLightColor],
           ),
         ),
         child: Column(
@@ -107,7 +108,7 @@ class QuestionsWidget extends StatelessWidget {
               child: FAProgressBar(
                 border: Border.all(color: Colors.grey.shade300),
                 borderRadius: BorderRadius.circular(30),
-                progressColor: Colors.green.shade900,
+                progressColor: kPrimaryColor,
                 maxValue: questions.length,
                 currentValue: question.id,
                 displayText:  question.id==1 ? '/${questions.length}  ' : '/${questions.length} Soru   ',
@@ -170,7 +171,7 @@ class QuestionsWidget extends StatelessWidget {
                           );
                         },
                         text: "Sonuçları Göster",
-                        color: Colors.green.shade900,
+                        color: kPrimaryColor,
                         textColor: Colors.white,
                       ),
                     ),
