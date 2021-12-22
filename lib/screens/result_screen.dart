@@ -166,8 +166,10 @@ class ResultScreen extends StatelessWidget {
                       ),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(30),
-                        child: Image.network(
-                          item.photUrl,
+                        child: Image(
+                          image: NetworkImage(
+                            item.photUrl,
+                          ),
                           fit: BoxFit.cover,
                         ),
                       ),

@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_vacation_app/api/vacation_api.dart';
 import 'package:flutter_vacation_app/models/option.dart';
 import 'package:flutter_vacation_app/models/question.dart';
 import 'package:flutter_animation_progress_bar/flutter_animation_progress_bar.dart';
@@ -111,9 +110,9 @@ class QuestionsWidget extends StatelessWidget {
                 progressColor: Colors.green.shade900,
                 maxValue: questions.length,
                 currentValue: question.id,
-                displayText: '/${questions.length} Soru   ',
+                displayText:  question.id==1 ? '/${questions.length}  ' : '/${questions.length} Soru   ',
                 displayTextStyle: TextStyle(
-                  fontSize: 16,
+                  fontSize: question.id==1 || question.id==2 ? 12 : 16,
                   color: Colors.white,
                 ),
               ),

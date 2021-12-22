@@ -9,6 +9,7 @@ class WelcomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Size _size = MediaQuery.of(context).size;
     bool isDesktop = Responsive.isDesktop(context);
     return SafeArea(
       child: Scaffold(
@@ -25,29 +26,35 @@ class WelcomeScreen extends StatelessWidget {
           ),
           child: Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Text(
-                  'Welcome!',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 28,
-                      fontWeight: FontWeight.w700),
+                Padding(
+                  padding:  EdgeInsets.symmetric(horizontal:_size.width*0.05),
+                  child: Text(
+                    'Tatile gitmek istiyorsunuz ancak nasıl bir tatil yapmak istediğinize ve nereye gideceğinize henüz karar veremediniz mi? Öyleyse testteki soruları cevaplayın, biz de size en uygun tatil yerlerini önerelim.',
+                    style: TextStyle(
+                        color: Colors.green.shade900,
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
-                SizedBox(height: 15),
-                button(
-                  context: context,
-                  onTap: () {
-                     Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => QuestionScreen(),
-                      ),
-                    );
-                  },
-                  text: "Teste Başla",
-                  color: Colors.white,
-                  textColor: Colors.green.shade900,
+                Padding(
+                  padding: EdgeInsets.only(bottom: _size.height*0.3),
+                  child: button(
+                    context: context,
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => QuestionScreen(),
+                        ),
+                      );
+                    },
+                    text: "Teste Başla",
+                    color: Colors.white,
+                    textColor: Colors.green.shade900,
+                  ),
                 ),
               ],
             ),
