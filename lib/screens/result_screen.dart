@@ -73,11 +73,23 @@ class ResultScreen extends StatelessWidget {
                       ),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(30),
-                        child: Image(
-                          image: NetworkImage(
-                            item.photUrl,
-                          ),
-                          fit: BoxFit.cover,
+                        child: FadeInImage.assetNetwork(
+                          placeholder: 'assets/images/loadingTransparent.gif',
+                          image: item.photUrl,
+                          imageCacheHeight: (_size.height *
+                                  (isMobile
+                                      ? 0.5
+                                      : isTablet
+                                          ? 0.65
+                                          : 0.60))
+                              .toInt(),
+                          imageCacheWidth: (_size.width *
+                                  (isMobile
+                                      ? 0.82
+                                      : isTablet
+                                          ? 0.75
+                                          : 0.32))
+                              .toInt(),
                         ),
                       ),
                     ),
