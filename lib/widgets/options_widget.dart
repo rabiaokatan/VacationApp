@@ -90,7 +90,7 @@ class OptionsWidget extends StatelessWidget {
   List<Vacation> getResult(List tagList, BuildContext context) {
     List<Vacation> resultVacationList = [];
     List<Vacation> vacations = [];
-    bool listIsEmpty = false;
+
     VacationApi.getUsersLocally(context).then((value) {
       vacations = value;
       for (var item in vacations) {
@@ -100,16 +100,27 @@ class OptionsWidget extends StatelessWidget {
           resultVacationList.add(item);
         }
       }
-      //Eğer seçilen koşullara uygun hiçbir öneri yoksa bu şartı uygular:
+    });
+    return resultVacationList;
+  }
+
+  List<Vacation> getResultControl(List tagList, BuildContext context) {
+    List<Vacation> resultVacationList = getResult(tagList, context);
+    List<Vacation> vacations = [];
+    List<Vacation> lastList = [];
+    //Eğer seçilen koşullara uygun hiçbir öneri yoksa bu şartı uygular:
+    VacationApi.getUsersLocally(context).then((value) {
+      vacations = value;
       if (resultVacationList.isEmpty || resultVacationList.length == 1) {
-        print("burada");
         for (var item in vacations) {
           if (tagList.any((element) => item.tags.contains(element))) {
             resultVacationList.add(item);
           }
         }
       }
+      lastList.add(resultVacationList.first);
+      lastList.add(resultVacationList.last);
     });
-    return resultVacationList;
+    return lastList;
   }
 }

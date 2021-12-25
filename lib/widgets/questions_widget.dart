@@ -159,7 +159,7 @@ class QuestionsWidget extends StatelessWidget {
                             }
                           }
                           List<Vacation> resultListVacation =
-                              OptionsWidget().getResult(tagList, context);
+                              OptionsWidget().getResultControl(tagList, context);
               
                           Navigator.push(
                             context,
