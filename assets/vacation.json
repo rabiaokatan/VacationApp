@@ -19,7 +19,7 @@
             "historicalPlaces",
             "exoticPets"
         ],
-        "photUrl": "https://ak-d.tripcdn.com/images/220t190000017ekgaDFE4_Z_550_412_R5_Q70_D.jpg",
+        "photUrl": "https://www.privateupgrades.com/_data/default-hotel_image/16/81078/nayara-garden-hotel-8_1400x1400_auto.jpg",
         "text": "Arenal Volkanı Ulusal Parkı'nın içinde bulunan bu lüks otelin tropikal bahçelerinde 500'den fazla kuş türünü ve birbirinden farklı hayvanları gözlemleyebilir, yerel lezzetleri deneyimleyebilirsiniz."
     },
     {
@@ -255,7 +255,7 @@
             "farEast"
         ],
         "photUrl": "https://cdn.omni-links.com/eurex/c1f77882-57b4-4452-b42a-0cf8aa8fc300.jpg?d=1280x1280",
-        "text": "Himeji Kalesi, Himeji, Hyōgo, Japonya'daki bir tepenin üzerinde bulunan bir Japon kalesi kompleksi. 1993'te UNESCO tarafından Dünya Mirası olarak tescillenmiştir. Çarpıcı yapı 1333'te inşa edildi, ancak o zamandan beri birkaç genişleme geçirdi. Şimdi, tamamlanmış haliyle kale, 83 binadan ve feodal döneme kadar uzanan gelişmiş bir savunma sisteminden oluşuyor. vvvvvvvvvvvvvvvv vvvvvvvvvvv vvvvvvvvvvvvvv vvvvvvv vvvvvvvvvvvvv vvvvvvvvvv vvvvvvvvvvv vvvvvvvvvv vvvvvvvvvvvvvvvvvvv vvvvvv vvvvvvvvvvvvvvvvvvvv vvvvvvvvv vvvvvvvvvvvv vvvvvvvvvvvvvv vvvvvvvvvvv vvvvvvvvvvvvvvv vvvvvvvv vvvvvvvvvvvvvvvvv vvvvvvvvvvv vvvvvvvvvvvvvvvv"
+        "text": "Himeji Kalesi, Himeji, Hyōgo, Japonya'daki bir tepenin üzerinde bulunan bir Japon kalesi kompleksi. 1993'te UNESCO tarafından Dünya Mirası olarak tescillenmiştir. Çarpıcı yapı 1333'te inşa edildi, ancak o zamandan beri birkaç genişleme geçirdi. Şimdi, tamamlanmış haliyle kale, 83 binadan ve feodal döneme kadar uzanan gelişmiş bir savunma sisteminden oluşuyor."
     },
     {
         "id": 22,
@@ -268,6 +268,37 @@
         ],
         "photUrl": "http://www.tibetanreview.net/wp-content/uploads/2018/05/Potala.jpg",
         "text": "Potala Sarayı, Çin'in Tibet Özerk Bölgesi'nde yer alan Lhasa'da yer almaktadır. Tarihi kayıtlara göre, bölgede yer alan ilk yapı, 7. yüzyılda hüküm süren Tubo Krallığı'nın kralı Songzanganbu döneminde inşa edildi. İlk yapıldığı zamanlarda Kızıl Dağ Sarayı adı anlamında Hongshan Sarayı adı ile adlandırıldı."
+    },
+    {
+        "id": 23,
+        "name": "Horseshoe Bay (Bermuda)",
+        "tags": [
+            "hot",
+            "cool",
+            "sea",
+            "forest",
+            "seaSport",
+            "ocean",
+            "exoticPets",
+            "island"
+        ],
+        "photUrl": "https://www.gotobermuda.co.uk/sites/default/files/styles/hero/public/head-horseshoe-bay.jpg?itok=BYFvV5Ng",
+        "text": "Atlas Okyanusu'nun ortasında bulunan bu güzel plajda keyifle vakit geçirebilirsiniz."
+    },
+    {
+        "id": 24,
+        "name": "Banana Beach, Koh Hey (Coral) Adası (Phuket-Tayland)",
+        "tags": [
+            "hot",
+            "cool",
+            "sea",
+            "forest",
+            "seaSport",
+            "ocean",
+            "farEast",
+            "island"
+        ],
+        "photUrl": "https://www.qbictravel.com/wp-content/uploads/2019/06/37402448_1788709331207330_6110594330164985856_o.jpg",
+        "text": "Hint Okyanusu'nun içinde Andaman Denizi'nde bulunan bu adada berrak suyun keyfini çıkarıp, yemyeşil ormanda gezintiye çıkıp farklı deniz sporlarını deneyebilirsiniz."
     }
-   
 ]
