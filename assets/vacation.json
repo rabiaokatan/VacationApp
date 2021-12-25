@@ -243,5 +243,31 @@
         ],
         "photUrl": "https://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/96/97/969707_v3.jpeg",
         "text": "Finalndiya'da bulunan bu iglo evlerde kalarak kuzey ışıklarının keyfini doyasıya çıkarabilirsiniz."
+    },
+    {
+        "id": 21,
+        "name": "Himeji Kalesi (Japonya)",
+        "tags": [
+            "hot",
+            "cool",
+            "forest",
+            "historicalPlaces",
+            "farEast"
+        ],
+        "photUrl": "https://cdn.omni-links.com/eurex/c1f77882-57b4-4452-b42a-0cf8aa8fc300.jpg?d=1280x1280",
+        "text": "Himeji Kalesi, Himeji, Hyōgo, Japonya'daki bir tepenin üzerinde bulunan bir Japon kalesi kompleksi. 1993'te UNESCO tarafından Dünya Mirası olarak tescillenmiştir. Çarpıcı yapı 1333'te inşa edildi, ancak o zamandan beri birkaç genişleme geçirdi. Şimdi, tamamlanmış haliyle kale, 83 binadan ve feodal döneme kadar uzanan gelişmiş bir savunma sisteminden oluşuyor. vvvvvvvvvvvvvvvv vvvvvvvvvvv vvvvvvvvvvvvvv vvvvvvv vvvvvvvvvvvvv vvvvvvvvvv vvvvvvvvvvv vvvvvvvvvv vvvvvvvvvvvvvvvvvvv vvvvvv vvvvvvvvvvvvvvvvvvvv vvvvvvvvv vvvvvvvvvvvv vvvvvvvvvvvvvv vvvvvvvvvvv vvvvvvvvvvvvvvv vvvvvvvv vvvvvvvvvvvvvvvvv vvvvvvvvvvv vvvvvvvvvvvvvvvv"
+    },
+    {
+        "id": 22,
+        "name": "Potala Sarayı (Lhasa- Çin)",
+        "tags": [
+            "hot",
+            "cool",
+            "historicalPlaces",
+            "farEast"
+        ],
+        "photUrl": "http://www.tibetanreview.net/wp-content/uploads/2018/05/Potala.jpg",
+        "text": "Potala Sarayı, Çin'in Tibet Özerk Bölgesi'nde yer alan Lhasa'da yer almaktadır. Tarihi kayıtlara göre, bölgede yer alan ilk yapı, 7. yüzyılda hüküm süren Tubo Krallığı'nın kralı Songzanganbu döneminde inşa edildi. İlk yapıldığı zamanlarda Kızıl Dağ Sarayı adı anlamında Hongshan Sarayı adı ile adlandırıldı."
     }
+   
 ]
