@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'screens/welcome_screen.dart';
 
 void main() {
@@ -15,8 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home:WelcomeScreen(),
+      home: WelcomeScreen(),
     );
   }
 }
-

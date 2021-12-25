@@ -38,7 +38,7 @@ class OptionsWidget extends StatelessWidget {
         padding: EdgeInsets.only(
             bottom: _size.height *
                 (isMobile
-                    ? 0.02
+                    ? 0.03
                     : isTablet
                         ? 0.015
                         : 0.018)),
@@ -52,7 +52,7 @@ class OptionsWidget extends StatelessWidget {
                 color: Colors.green.withOpacity(0.5),
                 spreadRadius: 5,
                 blurRadius: 7,
-                offset: Offset(0, 3), // changes position of shadow
+               offset: Offset(0, 3), // changes position of shadow
               ),
             ],
           ),
