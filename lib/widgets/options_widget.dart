@@ -52,7 +52,7 @@ class OptionsWidget extends StatelessWidget {
                 color: Colors.green.withOpacity(0.5),
                 spreadRadius: 5,
                 blurRadius: 7,
-               offset: Offset(0, 3), // changes position of shadow
+                offset: Offset(0, 3), // changes position of shadow
               ),
             ],
           ),
@@ -114,13 +114,16 @@ class OptionsWidget extends StatelessWidget {
       if (resultVacationList.isEmpty || resultVacationList.length == 1) {
         for (var item in vacations) {
           if (tagList.any((element) => item.tags.contains(element))) {
-            resultVacationList.add(item);
+            lastList.add(item);
           }
         }
+        resultVacationList.clear();
+        resultVacationList.add(lastList[0]);
+        resultVacationList.add(lastList[1]);
+      } else {
+        resultVacationList = getResult(tagList, context);
       }
-      lastList.add(resultVacationList.first);
-      lastList.add(resultVacationList.last);
     });
-    return lastList;
+    return resultVacationList;
   }
 }
